@@ -1,4 +1,6 @@
-@charset "UTF-8"
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&family=Press+Start+2P&display=swap');
 
 /* 
     Paleta de Cores
@@ -8,3 +10,15 @@
     Branco Escuro - #F8F4EA
     Branco -        #ECE8DD
 */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100vw;
+    height: 100vh;
+}
