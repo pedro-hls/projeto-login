@@ -9,49 +9,63 @@
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <main>
+    <header> 
 
-    <section>
-
-        <div id="imagem">
-
-            <img src="" alt="">
-
+        <div id="degrade">
         </div>
 
+    </header>
+    
+    <main>
+    <section>
+
         <div id="formulario">
-                
+
+            
+            <div><img id="imagem" src="imagens/pexels-brett-sayles-12083030.jpg" alt="montanha com neve"></div>
             <fieldset>
 
-                <h1> Login </h1>
-                <h2> Seja bem-vindo(a) novamente, Faça login para continuar </h2>
+                <h1> Bem-vindo! </h1>
+                <h2> Faça login para continuar </h2>
 
                 <!--  Arquivo PHP apenas representativo    -->
                 <form action="login.php" method="post">
 
-                    <legend> Email </legend>
-                        <label for="">
-                            <input type="email">
+                    <div id="type-forms">
+                        <p>
+                            <legend> Email </legend>
+                                <label for="email">
+                                    <input class="space" type="email" name="email" placeholder="pedro@mail.com">
+                                </label>
+                        </p>
+                        <p>
+                            <legend> Senha </legend>
+                            <label for="password">
+                                <input class="space" type="password" name="password" placeholder="*******" minlength="8" maxlength="20">
+                            </label>
+                        </p>
+                    </div>
+
+                    <p id="check-button">
+                        <label for="radio">
+                                <input id="check-button-input" type="checkbox" name="checkbox"> Manter-me conectado
                         </label>
+                    </p>
 
-                    <legend> Senha </legend>
-                    <label for="">
-                        <input type="password">
-                    </label>
-
-                    <label for="">
-                            <input type="checkbox"> Manter-me conectado
-                    </label>
-
-                        <button> Entrar </button>
+                    <p>
+                        <button type="submit"> Entrar </button>
+                    </p>
 
                 </form>
 
+                <p id="outros"> 
+                    <a href="#"> Não tem conta? Cadastre-se! </a>
+                    <a href="#"> Esqueceu sua senha? </a>
+                </p>
             </fieldset>
 
 
         </div>
-            
     </section>
         
     </main> 
