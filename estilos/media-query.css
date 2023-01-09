@@ -25,7 +25,6 @@
         float: left;
         border-radius: 20px 0px 0px 20px;
         background-position: center bottom;
-        box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.171);
     }
 
     fieldset {
@@ -56,7 +55,6 @@
         float: left;
         border-radius: 20px 0px 0px 20px;
         background-position: center bottom;
-        box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.171);
     }
 
     fieldset {

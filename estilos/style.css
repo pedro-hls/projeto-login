@@ -47,14 +47,6 @@ main {
     position: relative;
 }
 
-div#imagem {
-    display: inline-block;
-    height: 120px;
-    background: url(../imagens/pexels-brett-sayles-12083030.jpg) no-repeat;
-    background-position: center bottom;
-    background-size: cover;
-}
-
 section#formulario {
     display: block;
     margin: auto;
@@ -68,6 +60,16 @@ section#formulario {
     transform: translate(-50%, -50%);
     transition: width 0.3s, height 0.3s;
     transition-timing-function: ease;
+}
+
+div#imagem {
+    display: inline-block;
+    height: 120px;
+    width: 100%;
+    background: url(../imagens/pexels-brett-sayles-12083030.jpg) no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.171);
 }
 
 section {
