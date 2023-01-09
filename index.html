@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Tela de Login </title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
 </head>
 <body>
@@ -17,12 +18,9 @@
     </header>
     
     <main>
-    <section>
-
-        <div id="formulario">
-
+    <section id="formulario">
             
-            <div><img id="imagem" src="imagens/pexels-brett-sayles-12083030.jpg" alt="montanha com neve"></div>
+            <div id="imagem"></div>
             <fieldset>
 
                 <h1> Bem-vindo! </h1>
@@ -34,14 +32,14 @@
                     <div id="type-forms">
                         <p>
                             <legend> Email </legend>
-                                <label for="email">
-                                    <input class="space" type="email" name="email" placeholder="pedro@mail.com">
+                                <label for="iemail">
+                                    <input class="campo" type="email" name="email" id="iemail" placeholder="pedro@mail.com" autocomplete="email">
                                 </label>
                         </p>
                         <p>
                             <legend> Senha </legend>
-                            <label for="password">
-                                <input class="space" type="password" name="password" placeholder="*******" minlength="8" maxlength="20">
+                            <label for="ipassword">
+                                <input class="campo" type="password" name="password" id="ipassword" placeholder="********" required minlength="8" maxlength="20" autocomplete="current-password">
                             </label>
                         </p>
                     </div>
@@ -53,21 +51,26 @@
                     </p>
 
                     <p>
-                        <button type="submit"> Entrar </button>
+                        <input type="submit" value="Entrar">
                     </p>
 
                 </form>
 
-                <p id="outros"> 
-                    <a href="#"> Não tem conta? Cadastre-se! </a>
-                    <a href="#"> Esqueceu sua senha? </a>
+                <p class="outros"> 
+                    <a href="#"> Não tem conta? Cadastre-se! </a> <br>
                 </p>
+
+                <p class="outros"> 
+                    <a href="#"> Esqueci minha senha </a>
+                </p>
+
             </fieldset>
-
-
-        </div>
-    </section>
-        
+        </section>
     </main> 
+
+    <footer>
+        <p> Site criado por <a href="https://github.com/pedro-hls">Pedro Lima</a> para o desafio do Curso em Vídeo</p>
+    </footer>
+
 </body>
 </html>

@@ -12,6 +12,7 @@
     Azul Branco - #dde9f5
     Branco      - #f7faff
 */
+
 :root {
     --laranja: #FF6D03;
     --cinza: #393E46;
@@ -20,15 +21,17 @@
     --abranco: #dde9f5;
     --branco: #f7faff;
 
-    --fonte-padrao: "Poppins";
-    --fonte-alternativa: "Cabin";
+    --fonte-padrao: "Poppins", Arial, Helvetica, sans-serif;
+    --fonte-alternativa: "Cabin", Verdana, Tahoma, sans-serif;
 }
+
 * {
     margin: 0px;
     padding: 0px;
     font-size: 1em;
     box-sizing: border-box;
     color: var(--cinza);
+    box-sizing: border-box;
 }
 
 body, html {
@@ -38,24 +41,35 @@ body, html {
     text-align: center;
 }
 
-img#imagem {
-    background-image: linear-gradient(deg, rgba(28,109,208,1) 0%, rgba(221,233,245,1) 50%, rgba(28,109,208,1) 100%);
-    display: inline-block;
-    height: 100px;
-    object-position: bottom center;
+main {
+    height: 97vh;
+    width: 100vw;
+    position: relative;
 }
 
-div#formulario {
+div#imagem {
+    display: inline-block;
+    height: 120px;
+    background: url(../imagens/pexels-brett-sayles-12083030.jpg) no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+}
+
+section#formulario {
+    display: block;
     margin: auto;
     width: 85vw;
     background-color: #fbfcfd;
     border-radius: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.089);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.137);
     position: absolute;
     left: 50%;
     top:50%;
     transform: translate(-50%, -50%);
+    transition: width 0.3s, height 0.3s;
+    transition-timing-function: ease;
 }
+
 section {
     margin: auto;
 }
@@ -108,12 +122,16 @@ form > p  {
     padding-bottom: 10px;
 }
 
-.space {
+.campo {
     text-indent: 10px;
     margin-bottom: 5px;
     width: 250px;
     height: 40px;
 }
+.campo:focus-within {
+    background-color: var(--abranco);
+}
+
 
 ::placeholder {
     font-family: var(--fonte-padrao);
@@ -121,10 +139,10 @@ form > p  {
     font-size: 0.8em;
 }
 
-button {
+input[type=submit] {
     background-color: var(--azul);
-    padding: 7px;
-    width: 110px;
+    width: 100px;
+    height: 35px;
     font-family: var(--fonte-alternativa);
     font-size: 1.2em;
     border-radius: 50px;
@@ -132,9 +150,10 @@ button {
     font-weight: bolder;
     border: none;
     cursor: pointer;
+    margin-bottom: 20px;
 }
 
-button:hover {
+input[type=submit]:hover {
     transform: scale(105%);
 }
 
@@ -162,13 +181,36 @@ a {
     color: var(--cinza);
     font-size: 0.9em;
     opacity: 100%;
-    display: block;
-    padding-top: 10px;
+    box-sizing: border-box;
 }
 
-p#outros {
-    padding-bottom: 20px;
+p.outros {
+    padding-bottom: 10px;
 }
 a:hover {
     font-weight: bolder;
 }
+
+footer {
+    height: 3vh;
+    background-color: var(--azul);
+    font-weight: bolder;
+    color: var(--branco);
+    padding-top: 4px;
+}
+
+footer > p, footer > p > a {
+    font-size: 0.8em;
+    font-family: var(--fonte-alternativa);
+    color: var(--branco);
+    letter-spacing: 1px;
+}
+
+footer > p > a {
+    font-size: 1em;
+}
+
+footer > p > a:hover {
+    cursor: help;
+}
+
